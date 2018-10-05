@@ -3,7 +3,7 @@
 " Add this to your vimrc to make the backspace work like in most other programs:
 set backspace=indent,eol,start
 
-set nocompatible          " get rid of Vi compatibility mode. required(?
+set nocompatible          " get rid of Vi compatibility mode.required?
 set mouse=a               " enable mouse
 set autoindent            " use the indent of the previoud line for a newly created line 
 " set ruler                 " display 
@@ -20,7 +20,8 @@ syntax on
 
 " display line numbers
 set nu
-
+" show relative line numbers
+set relativenumber 
 " map
 imap jj <Esc>
 
@@ -62,15 +63,17 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'MarcWeber/vim-addon-mw-utils'
-  Plugin 'tomtom/tlib_vim'
-    Plugin 'garbas/vim-snipmate'
-      Plugin 'honza/vim-snippets'
+Plugin 'tomtom/tlib_vim'
+
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+
 Plugin 'vim-syntastic/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'easymotion/vim-easymotion'
-" Plugin ''
+Plugin 'https://github.com/hotoo/pangu.vim.git'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
