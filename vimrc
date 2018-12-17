@@ -1,4 +1,4 @@
-
+scriptencoding utf8
 
 " Add this to your vimrc to make the backspace work like in most other programs:
 set backspace=indent,eol,start
@@ -25,7 +25,11 @@ set relativenumber
 " map
 imap jj <Esc>
 
+" key bindings for UltiSnipsExpandTrigger 
+let g:UltiSnipsExpandTrigger="<c-e>"
 
+" Consider all .yar/.yara files to be YARA files.
+autocmd BufNewFile,BufRead *.yar,*.yara setlocal filetype=yara
 
 " ###################
 " # Color theme     #
